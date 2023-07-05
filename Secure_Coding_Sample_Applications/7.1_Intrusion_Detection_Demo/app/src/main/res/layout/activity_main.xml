@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <!--Google Play-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="is installed From Google Play ?"/>
+
+        <TextView
+            android:id="@+id/tv_status_google_play"
+            android:hint="GooglePlay status"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!--Emulator-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="is running on emulator?"/>
+
+        <TextView
+            android:id="@+id/tv_status_emulator"
+            android:hint="Emulator status"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <!--Debuggable-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="is Debuggable Flag On ?"/>
+        <TextView
+            android:id="@+id/tv_status_debuggable"
+            android:hint="Debuggable status"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+

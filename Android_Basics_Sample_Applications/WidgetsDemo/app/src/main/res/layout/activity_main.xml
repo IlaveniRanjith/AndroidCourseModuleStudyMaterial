@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:textColor="@color/fb_name_grey_color"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile number or Email"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"/>
+    
+    <EditText
+        android:id="@+id/et_email"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/fb_edittext_background"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/fb_edittext_background"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Log In"
+       android:textAllCaps="false"
+
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:textSize="20sp"
+            android:textColor="@color/fb_name_grey_color"/>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_new_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#4CAF50"
+        android:text="Create new account"
+        android:onClick="createNewAccount"
+        android:textAllCaps="false"
+
+        />
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5" >
+    <Button
+        android:layout_width="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginEnd="8dp"
+        android:text="1"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="1"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="1"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="1"
+        />
+    </LinearLayout>-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your gender"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/gender_grp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:onClick="createNewAccount"/>
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:onClick="createNewAccount"/>
+
+        <RadioButton
+            android:id="@+id/rb_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:onClick="createNewAccount"/>
+
+
+    </RadioGroup>
+
+    <!--Check Boxes-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"/>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

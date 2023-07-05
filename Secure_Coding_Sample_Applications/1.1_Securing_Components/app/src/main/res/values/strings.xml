@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Securing_Components</string>
+
+    <string name="custom_permission_label">Custom Permission</string>
+
+</resources>
+

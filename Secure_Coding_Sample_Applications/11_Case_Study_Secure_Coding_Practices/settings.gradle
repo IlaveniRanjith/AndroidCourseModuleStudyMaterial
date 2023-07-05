@@ -1,0 +1,2 @@
+rootProject.name = "Case_Study_Secure_Coding_Practices"
+include ':app'

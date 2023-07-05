@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+    <!--Password-->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:singleLine="true"/>
+    <!--Input EditText-->
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Plain Text"
+        android:singleLine="true"/>
+    <!--Output TextView-->
+    <TextView
+        android:id="@+id/tv_output"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Encrypted/Decrypted Text Will Display here"/>
+    <!--Buttons-->
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_encrypt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="onEncryptClick"
+            android:layout_marginEnd="8dp"
+            android:text="Encrypt"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_decrypt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="onDecryptClick"
+            android:text="Decrypt"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+

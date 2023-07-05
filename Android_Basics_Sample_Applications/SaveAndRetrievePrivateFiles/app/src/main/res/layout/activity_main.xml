@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter file name"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:layout_marginTop="8dp"
+        android:id="@+id/et_file_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter content"
+        android:singleLine="true"
+        />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Save file"
+            android:onClick="saveFile"
+            android:layout_marginStart="8dp"/>
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Read file"
+            android:onClick="readFile"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_show_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="The file content will appear here"
+        android:textSize="24sp"/>
+
+
+
+</LinearLayout>

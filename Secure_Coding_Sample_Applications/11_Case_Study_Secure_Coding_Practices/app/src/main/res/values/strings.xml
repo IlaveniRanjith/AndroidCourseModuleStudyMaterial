@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Case_Study_Secure_Coding_Practices</string>
+
+    <string name="custom_permission_label">My Custom Permission</string>
+</resources>

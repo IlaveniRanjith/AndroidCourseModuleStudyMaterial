@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:hint="Enter your name"
+       android:id="@+id/et_student_name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+    <EditText
+        android:hint="Enter your phone number"
+        android:id="@+id/et_student_phone"
+        android:layout_width="match_parent"
+        android:inputType="phone"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+
+        <Button
+            android:onClick="insertContact"
+            android:id="@+id/btn_insert_record"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Insert"/>
+
+
+        <Button
+            android:onClick="updateRecord"
+            android:id="@+id/btn_update_record"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Update"/>
+
+        <Button
+            android:onClick="readContactsFromDB"
+            android:id="@+id/btn_Read_record"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Read"/>
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
