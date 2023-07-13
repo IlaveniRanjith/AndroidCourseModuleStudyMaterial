@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyWidgets</string>
+    <string name="my_welcome_text">Welcome Back,</string>
+</resources>
