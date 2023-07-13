@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:background="@color/black"
+    android:layout_height="wrap_content">
+
+    <!-- Replicated the layout from website
+    https://www.imdb.com/chart/top/
+    -->
+
+    <ImageView
+        android:id="@+id/iv_movie_photo"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/img_movie_one"/>
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Shawshank Redemption"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_movie_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1994"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_movie_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1994"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_movie_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9.3"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/iv_movie_info_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/white"
+        android:src="@drawable/ic_info"/>
+
+
+</LinearLayout>
