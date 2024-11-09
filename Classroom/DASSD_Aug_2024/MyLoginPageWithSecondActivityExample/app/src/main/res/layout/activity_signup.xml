@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <ImageButton
+        android:src="@drawable/ic_back_arrow"
+        android:layout_width="48dp"
+        android:onClick="goBack"
+        android:layout_height="48dp"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Activity"
+        android:textSize="46sp"/>
+
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <RadioButton
+            android:buttonTint="#FF9800"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DASSD"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAC"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESD"/>
+
+
+
+
+
+    </RadioGroup>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WidgetsActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MY favourite subject"/>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"/>
+
+        <RadioButton
+            android:id="@+id/rb_ds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Structures"/>
+
+        <RadioButton
+            android:id="@+id/rb_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"/>
+
+        <RadioButton
+            android:id="@+id/rb_android"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_show_subjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show the subject"
+        android:layout_margin="8dp"/>
+
+    <!--Spinner-->
+    <Spinner
+        android:id="@+id/sp_states"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--ListView-->
+    <ListView
+        android:id="@+id/lv_states"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+</LinearLayout>
